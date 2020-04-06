@@ -1,0 +1,22 @@
+.cta{
+    background: linear-gradient(0, #FFE8E8 57%, #ffffff 57%);
+    &-wrapper{
+        &-thumb{
+            margin: 0 18% 40px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &-content{
+            margin: 0 16%;
+            h1{
+                font-family: $primary-font;
+                color: $black;
+                font-size: 50px;
+                line-height: 60px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="253" fill="none" viewBox="0 0 210 253">
+  <path fill="url(#pattern0)" fill-rule="evenodd" d="M189.036 123.155c11.086 79.817-75.774 158.63-142.226 119.491-30.7193-18.111-17.8017-61.905-23.5356-103.185-4.8429-34.88-37.4888-60.7532-16.05334-91.2082C52.1221-15.5417 177.071 37.0101 189.036 123.155z" clip-rule="evenodd" opacity=".230911"/>
+  <path stroke="#000" d="M208.541 103.224c5.515 39.711-13.336 79.209-41.868 103.907-28.532 24.698-66.627 34.51-99.6092 15.085-15.1388-8.926-19.5683-24.181-20.8924-42.51-.532-7.364-.561-15.192-.5909-23.28-.0074-1.978-.0148-3.972-.0296-5.978-.0753-10.197-.343-20.702-1.7812-31.056-1.2199-8.785-4.1886-16.991-7.6028-24.8144-1.5436-3.5372-3.181-7.0023-4.7901-10.4075-.1703-.3604-.3403-.7201-.5098-1.0792-1.7727-3.7549-3.4952-7.4386-5.012-11.0852-3.0348-7.2962-5.2295-14.4068-5.3498-21.5667-.12-7.145 1.8253-14.3691 7.1247-21.8984C49.8851-3.07917 92.0434-5.95131 130.288 9.93832c38.229 15.88348 72.301 50.43398 78.253 93.28568z"/>
+  <defs>
+    <pattern id="pattern0" width=".052632" height=".042918" patternContentUnits="objectBoundingBox">
+      <use transform="scale(.00526 .0043)" xlink:href="#image0"/>
+    </pattern>
+    <image id="image0" width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGOfPtRkwAAABhJREFUGBljYBia4D/Q2SCMAphQeEOcAwDBgwIBwMOHsQAAAABJRU5ErkJggg=="/>
+  </defs>
+</svg>

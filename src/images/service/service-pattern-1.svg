@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="269" height="265" fill="none" viewBox="0 0 269 265">
+  <path stroke="#000" d="M268.5 125c0 68.759-55.741 124.5-124.5 124.5-68.7594 0-124.5-55.741-124.5-124.5C19.5 56.2406 75.2406.5 144 .5 212.759.5 268.5 56.2406 268.5 125z"/>
+  <path fill="url(#pattern0)" fill-rule="evenodd" d="M125 265c69.036 0 125-55.964 125-125 0-69.0356-55.964-125-125-125C55.9644 15 0 70.9644 0 140c0 69.036 55.9644 125 125 125z" clip-rule="evenodd" opacity=".230911"/>
+  <defs>
+    <pattern id="pattern0" width=".04" height=".04" patternContentUnits="objectBoundingBox">
+      <use transform="scale(.004)" xlink:href="#image0"/>
+    </pattern>
+    <image id="image0" width="10" height="10" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGOfPtRkwAAABhJREFUGBljYBia4D/Q2SCMAphQeEOcAwDBgwIBwMOHsQAAAABJRU5ErkJggg=="/>
+  </defs>
+</svg>

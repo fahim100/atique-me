@@ -1,0 +1,43 @@
+.navbar {
+    &-brand {
+        font-size: 34px;
+        font-family: $roboto-mono;
+        color: $logo-color;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: lowercase;
+        &:hover {
+            color: $logo-color;
+        }
+    }
+    &-nav {
+        .nav-item {
+            padding: 0 10px;
+            .nav-link {
+                color: $text-color;
+                font-family: $secondary-font;
+                font-size: 16px;
+                position: relative;
+                transition: all .3s ease;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 1px;
+                    width: calc( 100% - 10px );
+                    left: 0;
+                    bottom: 18px;
+                    background: #181919;
+                    transition: all .3s ease;
+                    transform: scale(0);
+                    transform-origin: left center;
+                }
+                &:hover{
+                    color: $black;
+                    &::before{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

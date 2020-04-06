@@ -1,0 +1,28 @@
+// html{
+//   scroll-behavior: smooth;
+// }
+
+body {
+  background: $white;
+}
+
+.section{
+  padding: 100px 0;
+}
+
+.button{
+  padding: 20px 40px;
+  background: $black;
+  color: $white;
+  border-radius: 10px;
+  font-family: $secondary-font;
+  text-decoration: none;
+  transition: $transition;
+  display: inline-block;
+  &:hover{
+    background: $text-color;
+    color: $white;
+    text-decoration: none;
+  }
+}
+

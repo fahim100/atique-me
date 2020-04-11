@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	// headroom Plugin
+	var myElement = document.querySelector(".headroom");
+	var headroom  = new Headroom(myElement);
+	headroom.init();
+
     // Recent Article slider
 	$('.recent-slider').slick({
 		infinite: false,
@@ -10,7 +15,9 @@ $(document).ready(function() {
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
 	});
-		
-	var dataId = $('.slick-current').attr("data-slick-index");    
-    console.log(dataId);
+
+	// Match height plugin
+	$('.recent-slider-item').matchHeight({
+		byRow: 0
+	});
 });

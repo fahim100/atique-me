@@ -1,24 +1,39 @@
 .hero{
-    padding: 120px 0;
+    padding: 120px 0;    
+    @include desktop{
+        padding: 120px 0 0 0;
+    }
     &-content{
         z-index: 11;
         position: relative;
+        @include desktop{
+            text-align: center;
+        }
         h1{
             font-family: $primary-font;
             font-size: 70px;
             color: $black;
             margin: 0 0 20px 0;
+            @include desktop{
+                font-size: 50px;
+            }
         }
         p{
             font-family: $secondary-font;
             color: $text-color;
             line-height: 30px;
             margin: 0 0 60px 0;
+            @include desktop{
+                margin: 0 0 30px 0;
+            }
         }
     }
     &-thumbnail{
         margin: 0 -150px;
         z-index: -1;
+        @include desktop{
+            margin: 50px 0 0 0;
+        }
         img{
             height: 100%;
             width: 100%;

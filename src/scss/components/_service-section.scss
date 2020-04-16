@@ -5,11 +5,13 @@
         position: absolute;
         top: 12%;
         right: -5%;
+        z-index: -1;
     }
     &-pattern-2{
         position: absolute;
         bottom: 15%;
         left: 0;
+        z-index: -1;
     }
     &-title{
         font-family: $primary-font;
@@ -21,8 +23,23 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 10%;
+        @include tablet{
+            justify-content: center;
+        }
+        @include desktop{
+            margin: 0;
+        }
         &-item{
             flex-basis: 40%;
+            @include desktop{
+                flex-basis: 45%;
+            }
+            @include tablet{
+                flex-basis: 90%;
+            }
+            @include mobile{
+                flex-basis: 75%;
+            }
             .wrapper{
                 margin-bottom: 80px;
                 border-radius: 10px;
@@ -38,12 +55,18 @@
                 .content{
                     margin-left: 50px;
                     margin-top: 50px;
+                    @include mobile{
+                        margin-right: -50px;
+                    }
                     h3{
                         font-size: 40px;
                         font-family: $primary-font;
                         color: $black;
                         line-height: 60px;
                         margin-bottom: 10px;
+                        @include mobile{
+                            font-size: 30px;
+                        }
                     }
                     ul{
                         margin: 0;

@@ -1,5 +1,8 @@
 .recent{
     overflow: hidden;
+    @include desktop{
+        padding: 100px 0 0 0;
+    }
     &-title{
         h1{
             font-size: 50px;

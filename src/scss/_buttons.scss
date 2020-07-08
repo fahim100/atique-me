@@ -1,0 +1,22 @@
+.btn {
+  font-size: 16px;
+  border: none;
+  line-height: 30px;
+  padding: 13px 25px;
+  border-radius: 10px;
+  min-width: 190px;
+  letter-spacing: 0.5px;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  perspective: 600px;
+  &:hover {
+    transform: scale(1.1) translate3d(0, -5px, 10px);
+    letter-spacing: 1px;
+  }
+  &-primary {
+    background: $black;
+    color: $white;
+    &:hover {
+      background: $black;
+    }
+  }
+}

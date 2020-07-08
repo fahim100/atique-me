@@ -1,68 +1,74 @@
-.footer{
-    background: #393939;
-    &-icon{
-        ul{
-            margin: 0;
-            padding: 0;
-            @include desktop{
-                text-align: center;
-                margin-bottom: 30px;
-            }
-            li{
-                list-style: none;
-                display: inline-block;
-                a{
-                    height: 65px;
-                    width: 65px;
-                    display: block;
-                    position: relative;
-                    border-radius: 50%;
-                    transition: $transition;
-                    svg{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        z-index: 1;
-                    }
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        border: 1px solid #828282;
-                        top: 0;
-                        left: 0;
-                        border-radius: 50%;
-                        height: 100%;
-                        width: 100%;
-                    }
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        background: #2E2E2E;
-                        top: 5px;
-                        left: 5px;
-                        border-radius: 50%;
-                        height: 100%;
-                        width: 100%;
-                        transition: $transition;
-                    }
-                    &:hover{
-                        &::before{
-                            top: 0;
-                            left: 0;
-                        }
-                    }
-                }
-                &:not(:last-child){
-                    margin-right: 25px;
-                }
-            }
-        }
-    }
-    &-thumb{
-        img{
+.footer {
+  background: #343439;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  &-icon {
+    ul {
+      margin: 0;
+      padding: 0;
+      @include desktop {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          height: 65px;
+          width: 65px;
+          display: block;
+          position: relative;
+          border-radius: 50%;
+          transition: $transition;
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #828282;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
             height: 100%;
             width: 100%;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            background: #1f1f22;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            transition: $transition;
+          }
+          &:hover {
+            &::before {
+              top: 0;
+              left: 0;
+            }
+          }
         }
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+      }
     }
+  }
+  &-thumb {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    transform: translateY(80px);
+  }
 }

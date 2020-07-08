@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Report</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&;600display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .welcome-page{
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo-wrapper{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: 30px;
+      }
+      .welcome-page h1{
+        font-size: 80px;
+        line-height: 80px;
+        color: #3B4547;
+        font-weight: 600;
+      }
+      .logo-wrapper p{
+        margin: 0 20px;
+        font-size: 30px;
+        line-height: 32px;
+        color: #3B4547;
+        font-weight: 500;
+      }
+      .error-card {
+        background-color: #ffffff;
+        padding: 30px 25px 22px;
+        margin: 0 auto 10px;
+        border: 1px solid #dce1e7;
+        border-radius: 4px;
+        width: 90%;
+      }
+      .error-card:first-child{
+        display:block; clear:both; page-break-after:always;
+      }
+      .error-card:nth-child(6n){
+        display:block; clear:both; page-break-after:always;
+      }
+      .error-card a{
+        color: #1A65F6;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+      }
+      .error-card a:hover{
+        text-decoration: underline;
+      }
+      .error-card p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 24px;
+        color: #3B4547;
+      }
+      .error-card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+      }
+      .error-card-header h5 {
+        margin: 0 20px 0 12px;
+        font-weight: 600px;
+        font-size: 14px;
+        color: #3B4547;
+      }
+      .error-card-header span.tag {
+        display: inline-block;
+        font-size: 13px;
+        background-color: #FFF8E6;
+        border-radius: 4px;
+        padding: 5px 20px;
+        color: #DA9F08;
+        -webkit-print-color-adjust: exact; 
+      }
+    </style>
+    <body>
+    <div class="welcome-page">
+      <h1>Amazon Web Services</h1>
+      <div class="logo-wrapper">
+        <svg width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+          <g clip-path="url(#clip0)">
+            <path d="M3.618 0v11.46h19.26l-.032 9.49L19 23.883l-3.846-2.932V15.2H11.31v7.6L19 28.663l7.692-5.863V7.6l-19.272.06V3.8h26.963V0H3.618z" fill="url(#paint0_linear)"/>
+            <path d="M30.53 24.39L19 33.222 7.464 24.426V15.2H3.618v11.073L19 38l15.382-11.727V7.6h-3.846l-.006 16.79z" fill="url(#paint1_linear)"/>
+          </g>
+          <defs>
+            <linearGradient id="paint0_linear" x1="2.509" y1="24.046" x2="30.643" y2="-4.088" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#740AFC"/>
+              <stop offset="1" stop-color="#00EAFF"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="4423.72" y1="14713" x2="17927.1" y2="1048.18" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#740AFC"/>
+              <stop offset="1" stop-color="#00EAFF"/>
+            </linearGradient>
+            <clipPath id="clip0">
+              <path fill="#fff" d="M0 0h38v38H0z"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <p>Secureframe Report</p>
+      </div>
+    </div>
+    
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Multiple Subnets</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>1628688717903696871</a>
+      <p>
+        Only the default subnet in these regions is used: asia-northeast3, europe-west1, us-east4, asia-southeast2, southamerica-east1, asia-northeast1, us-west3, us-west1, us-central1, us-east1, asia-east2, asia-southeast1, europe-west6, europe-north1, australia-southeast1, us-west2, europe-west3, asia-south1, asia-east1, europe-west2, us-west4, europe-west4, northamerica-northeast1, asia-northeast2
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>1635875890407019519</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>1674448845663507455</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>2588950775729624063</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>8038649754727879679</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>7857694231267513343</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>7409824481978749951</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>7142720268272014335</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>2812086588888454143</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>7652773279921738751</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>1772316208148124671</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>8492132064199840767</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>693182366240609279</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>1266216722484302847</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>5996523333830972415</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>5402923458698286079</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>8139819947063120895</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>3264661152727438335</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>985361689943086079</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>5216622899977655295</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Flow Logs Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>4087654062908380159</a>
+      <p>
+        The subnet does not have flow logs enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 1635875890407019519
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 1674448845663507455
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 2588950775729624063
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 8038649754727879679
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 7857694231267513343
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 7409824481978749951
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 7142720268272014335
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 2812086588888454143
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 7652773279921738751
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 1772316208148124671
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 8492132064199840767
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 693182366240609279
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 1266216722484302847
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 5996523333830972415
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 5402923458698286079
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 8139819947063120895
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 3264661152727438335
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 985361689943086079
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 5216622899977655295
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Private Access Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>N/A</a>
+      <p>
+        The following Subnets do not have Private Google Access Enabled: 4087654062908380159
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Versioning</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>crafty-apex-107323-backups</a>
+      <p>
+        Bucket versioning not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Versioning</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>crafty-apex-107323.appspot.com</a>
+      <p>
+        Bucket versioning not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Versioning</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>hg-prod-backups</a>
+      <p>
+        Bucket versioning not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Versioning</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>staging.crafty-apex-107323.appspot.com</a>
+      <p>
+        Bucket versioning not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Logging</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>crafty-apex-107323-backups</a>
+      <p>
+        Bucket Logging not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Logging</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>crafty-apex-107323.appspot.com</a>
+      <p>
+        Bucket Logging not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Logging</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>hg-prod-backups</a>
+      <p>
+        Bucket Logging not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Bucket Logging</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>staging.crafty-apex-107323.appspot.com</a>
+      <p>
+        Bucket Logging not Enabled
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Security Policy Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/global/backendServices</a>
+      <p>
+        The backend service does not have an attached security policy
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>CLB CDN Enabled</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/global/backendServices</a>
+      <p>
+        CDN is disabled on the backend service
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Service Account Key Rotation</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/serviceAccounts/firebase-adminsdk-jsl6a@crafty-apex-107323.iam.gserviceaccount.com/keys/b1c5c542b0f3ce6460bb7d449bea7aaaf18b3228</a>
+      <p>
+        The service account key has not been rotated in over 90 days
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Service Account Key Rotation</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/serviceAccounts/firebase-adminsdk-jsl6a@crafty-apex-107323.iam.gserviceaccount.com/keys/c40da09f9b4dabaf2c369dee21710a70b81e3331</a>
+      <p>
+        The service account key has not been rotated in over 90 days
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Service Account Managed Keys</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/serviceAccounts/secureframe@crafty-apex-107323.iam.gserviceaccount.com/keys/352245356a4c834b2787039d1a0c844c97d24c8a</a>
+      <p>
+        The user service account key is not being managed by Google
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Service Account Managed Keys</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/serviceAccounts/firebase-adminsdk-jsl6a@crafty-apex-107323.iam.gserviceaccount.com/keys/b1c5c542b0f3ce6460bb7d449bea7aaaf18b3228</a>
+      <p>
+        The user service account key is not being managed by Google
+      </p>
+    </div>
+  
+
+    <div class="error-card">
+      <div class="error-card-header">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 16A8 8 0 108 0a8 8 0 000 16zm3.65-12.572l.921.921L8.921 8l3.65 3.651-.92.921L8 8.921l-3.65 3.65-.922-.92L7.08 8l-3.65-3.65.92-.922L8 7.08l3.651-3.65z"
+            fill="#DF1B1B"
+          />
+        </svg>
+        <h5>Service Account Managed Keys</h5>
+        <span class="tag">global</span>
+      </div>
+      <a>projects/crafty-apex-107323/serviceAccounts/firebase-adminsdk-jsl6a@crafty-apex-107323.iam.gserviceaccount.com/keys/c40da09f9b4dabaf2c369dee21710a70b81e3331</a>
+      <p>
+        The user service account key is not being managed by Google
+      </p>
+    </div>
+</body></html>

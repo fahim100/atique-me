@@ -4,13 +4,21 @@
 
 body {
   background: $white;
+  cursor: none;
 }
 
-.section{
+main {
+  margin-bottom: 560px;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+}
+
+.section {
   padding: 100px 0;
 }
 
-.button{
+.button {
   padding: 20px 40px;
   background: $black;
   color: $white;
@@ -19,29 +27,89 @@ body {
   text-decoration: none;
   transition: $transition;
   display: inline-block;
-  &:hover{
+  &:hover {
     background: $text-color;
     color: $white;
     text-decoration: none;
   }
 }
 
-.headroom {
-  will-change: transform;
-  transition: transform 200ms linear;
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
 }
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
-}
-.headroom--fixed {
+
+.site-progress {
+  background-color: rgb(230, 230, 230);
   position: fixed;
-  z-index: 10;
-  right: 0;
-  left: 0;
-  top: 0;
-  background: $white;
-  z-index: 999;
+  height: 100px;
+  width: 4px;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 3;
+  .site-progressbar {
+    width: 100%;
+    background-color: $black;
+    height: 0;
+    border-radius: 4px;
+  }
+}
+
+.follower-wrapper {
+  // opacity: 0;
+  position: relative;
+  z-index: 100000;
+  transition: opacity 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  .pointer {
+    position: fixed;
+    z-index: 1000000;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -5px 0 0 -5px;
+    background: $black;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    backface-visibility: hidden;
+    transform-origin: center center;
+    transition: background 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  }
+  .follower {
+    position: fixed;
+    z-index: 1000001;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -5px 0 0 -5px;
+    background: transparent;
+    border: 2px solid $black;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    backface-visibility: hidden;
+    transform-origin: center center;
+    transition: all 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+    transition-property: transform, border;
+    &.big {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  &.revert {
+    .pointer {
+      background: $white;
+    }
+    .follower {
+      border: 1px solid $white;
+    }
+  }
+  &.active {
+    opacity: 1;
+  }
 }

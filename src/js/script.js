@@ -12,6 +12,7 @@ $(document).ready(function () {
     cssEase: "cubic-bezier(.19,1,.22,1)",
     dots: false,
     arrows: true,
+    swipeToSlide: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
     responsive: [
@@ -76,6 +77,15 @@ $(document).ready(function () {
       $(".follower-wrapper").addClass("revert");
     } else {
       $(".follower-wrapper").removeClass("revert");
+    }
+  });
+
+  // Mouse follower cursor change
+  $(".show-case-item").on("mouseenter mouseleave", (e) => {
+    if (e.type == "mouseenter") {
+      $(".follower-wrapper").addClass("arrow");
+    } else {
+      $(".follower-wrapper").removeClass("arrow");
     }
   });
 });

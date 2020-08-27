@@ -20,3 +20,30 @@
     }
   }
 }
+
+.load-button {
+  background: transparent;
+  width: 65px;
+  height: 65px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid $black;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #bbf0e5;
+    z-index: -1;
+    top: -7px;
+    left: 7px;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  &:hover {
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+}

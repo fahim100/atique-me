@@ -33,6 +33,35 @@ $(document).ready(function () {
     ],
   });
 
+  $(".testimonial-slider").slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // cssEase: "cubic-bezier(0.36, 0.03, 0, 0.91)",
+    dots: true,
+    arrows: false,
+    swipeToSlide: true,
+    centerMode: true,
+    autoplay: true,
+    // variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
   // Match height plugin
   $(".blog-slider-item").matchHeight({
     byRow: 0,

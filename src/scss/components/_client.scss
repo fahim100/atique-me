@@ -1,18 +1,27 @@
-.client{
-    &-counter{
-        span{
-            font-family: $primary-font;
-            font-size: 40px;
-            line-height: 60px;
-            color: $black;
-        }
-        h3{
-            font-family: $secondary-font;
-            color: $text-color;
-            line-height: 30px;
-            font-size: 16px;
-            margin: 0;
-            font-weight: 500;
-        }
+.client {
+  padding: 80px 0 100px;
+  &-counter {
+    background: #f0f3f6;
+    padding: 30px;
+    border-radius: 13px;
+    span {
+      font-family: $primary-font;
+      font-size: 40px;
+      line-height: 60px;
+      color: $black;
     }
+    h3 {
+      font-family: $secondary-font;
+      color: $text-color;
+      line-height: 30px;
+      font-size: 16px;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+  .office {
+    border-radius: 13px;
+    width: 100%;
+    margin-top: 70px;
+  }
 }

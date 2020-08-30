@@ -1,0 +1,136 @@
+.about {
+  padding: 200px 0 80px;
+  &-content {
+    h1 {
+      font-family: $primary-font;
+      font-size: 60px;
+      line-height: 70px;
+      margin: 0 0 29px 0;
+      color: $black;
+    }
+    p {
+      font-family: $secondary-font;
+      font-size: 16px;
+      line-height: 30px;
+      color: $text-color;
+      margin: 0 0 60px 0;
+    }
+    .read-more {
+      display: inline-block;
+      text-decoration: none;
+      color: $black;
+      font-family: $secondary-font;
+      font-size: 16px;
+      position: relative;
+      margin-left: 5px;
+      line-height: 1;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background: $black;
+        transform: scale(0);
+        transform-origin: left center;
+        transition: $transition;
+      }
+      &:hover {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+    .social-icon {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          height: 65px;
+          width: 65px;
+          display: block;
+          position: relative;
+          border-radius: 50%;
+          transition: $transition;
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            path {
+              fill: $black;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #828282;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            transition: $transition;
+          }
+          &.green {
+            &::before {
+              background: #bbf0e5;
+            }
+          }
+          &.yellow {
+            &::before {
+              background: #fff2ce;
+            }
+          }
+          &.purple {
+            &::before {
+              background: #eee5ff;
+            }
+          }
+          &.red {
+            &::before {
+              background: #ffe6dd;
+            }
+          }
+          &.blue {
+            &::before {
+              background: #dff4ff;
+            }
+          }
+          &:hover {
+            &::before {
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  &-thumb {
+    position: relative;
+    text-align: center;
+  }
+}
+
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

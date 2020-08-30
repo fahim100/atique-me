@@ -37,7 +37,7 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // cssEase: "cubic-bezier(0.36, 0.03, 0, 0.91)",
+    cssEase: "cubic-bezier(0.36, 0.03, 0, 0.91)",
     dots: true,
     arrows: false,
     swipeToSlide: true,

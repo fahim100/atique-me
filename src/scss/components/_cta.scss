@@ -20,6 +20,9 @@
   }
   padding-bottom: 100px;
   background: linear-gradient(0, #eee5ff 65%, #ffffff 57%);
+  &.green {
+    background: linear-gradient(0, #dcfff2 65%, #ffffff 57%);
+  }
   &-wrapper {
     &-thumb {
       margin-bottom: 40px;

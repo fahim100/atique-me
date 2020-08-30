@@ -13,8 +13,8 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     swipeToSlide: true,
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
+    prevArrow: $(".blog .prev"),
+    nextArrow: $(".blog .next"),
     responsive: [
       {
         breakpoint: 991,
@@ -62,13 +62,48 @@ $(document).ready(function () {
     ],
   });
 
+  $(".client-slider").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    cssEase: "cubic-bezier(0.36, 0.03, 0, 0.91)",
+    dots: false,
+    arrows: true,
+    swipeToSlide: true,
+    prevArrow: $(".client .prev"),
+    nextArrow: $(".client .next"),
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
   // Match height plugin
   $(".blog-slider-item").matchHeight({
     byRow: 0,
   });
 
   // counter up js
-  $(".counter").counterUp({
+  $(".count").counterUp({
     delay: 10,
     time: 1000,
   });

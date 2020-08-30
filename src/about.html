@@ -4,9 +4,14 @@
 <main>
   @@include('components/about-me.htm')
   
-  @@include('components/client.htm')
+  @@include('components/counter.htm')
   
-  @@include('components/cta.htm')
+  @@include('components/clients.htm')
+  
+  @@include('components/cta.htm', {
+    "color": "red"
+  })
+  
 </main>
 
 @@include('components/footer.htm')

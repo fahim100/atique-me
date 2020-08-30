@@ -1,0 +1,112 @@
+.client {
+  padding: 0 0 100px;
+  position: relative;
+  &-title {
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  &-slider-arrow {
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      li {
+        list-style: none;
+        display: inline-block;
+        height: 65px;
+        width: 65px;
+        position: relative;
+        border: 2px solid #979797;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        // z-index: 1;
+        &::after {
+          transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          z-index: -1;
+          transform: translate(4px, 4px);
+        }
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        &:hover {
+          &::after {
+            transform: translate(0, 0);
+          }
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          path {
+            transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+            fill: #979797;
+          }
+        }
+        &.prev {
+          &::after {
+            background: #bbf0e5;
+          }
+          &.slick-disabled {
+            pointer-events: none;
+          }
+        }
+        &.next {
+          &::after {
+            background: #fff2ce;
+          }
+          &.slick-disabled {
+            pointer-events: none;
+          }
+        }
+        &:hover {
+          border-color: $black;
+          svg {
+            path {
+              fill: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-slider {
+    .slick-list {
+      margin: 0 -15px;
+    }
+    &-item {
+      margin: 0 15px;
+      position: relative;
+      border-radius: 13px;
+      height: 160px;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(4n -3) {
+        background: #eee5ff;
+      }
+      &:nth-child(4n -2) {
+        background: #ffe6dd;
+      }
+      &:nth-child(4n -1) {
+        background: #f9ffc7;
+      }
+      &:nth-child(4n) {
+        background: #dff4ff;
+      }
+    }
+  }
+}

@@ -145,7 +145,7 @@ $(document).ready(function () {
   });
 
   // Mouse follower cursor change
-  $(".show-case-item").on("mouseenter mouseleave", (e) => {
+  $(".show-case-item, .project-item").on("mouseenter mouseleave", (e) => {
     if (e.type == "mouseenter") {
       $(".follower-wrapper").addClass("arrow");
     } else {

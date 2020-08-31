@@ -1,0 +1,62 @@
+.contact {
+  padding: 200px 0 100px;
+  &-header {
+    border-radius: 13px;
+    background: #d5ffff;
+    padding: 95px;
+    display: flex;
+    margin-bottom: 75px;
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      max-width: 400px;
+      margin-bottom: 0;
+    }
+    img {
+      margin: -180px -10px -20px 0;
+    }
+  }
+  &-map {
+    padding: 50px 0 100px;
+    .section-title {
+      margin-bottom: 100px;
+    }
+    &-image {
+      padding: 0 5%;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 50%;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: inherit;
+          border-radius: 50%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.3;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: inherit;
+          border-radius: 50%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}

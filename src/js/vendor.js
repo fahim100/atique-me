@@ -1,4 +1,10 @@
-// @import '../plugins/jQuery/jquery.min.js';
-// @import '../plugins/bootstrap/bootstrap.min.js';
-// @import '../plugins/slick/slick.min.js';
-// @import '../plugins/tweenmax/TweenMax.min.js';
+@import '../plugins/bootstrap/bootstrap.min.js';
+@import '../plugins/slick/slick.min.js';
+@import '../plugins/waypoint/jquery.waypoints.min.js';
+@import '../plugins/match-height/match-height.js';
+@import '../plugins/headroom/headroom.min.js';
+@import '../plugins/headroom/headroom.min.js';
+@import '../plugins/counter-up/counterup.min.js';
+@import '../plugins/tilt/tilt.min.js';
+@import '../plugins/tweenmax/TweenMax.min.js';
+@import '../plugins/isotope/isotope.js';

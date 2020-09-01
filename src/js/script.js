@@ -145,12 +145,32 @@ $(document).ready(function () {
   });
 
   // Mouse follower cursor change
-  $(".show-case-item, .project-item").on("mouseenter mouseleave", (e) => {
-    if (e.type == "mouseenter") {
-      $(".follower-wrapper").addClass("arrow");
-    } else {
-      $(".follower-wrapper").removeClass("arrow");
+  $(".show-case-item, .project-item, .freebie-item").on(
+    "mouseenter mouseleave",
+    (e) => {
+      if (e.type == "mouseenter") {
+        $(".follower-wrapper").addClass("arrow");
+      } else {
+        $(".follower-wrapper").removeClass("arrow");
+      }
     }
+  );
+
+  // Isotope Js
+  $grid = $(".freebie-wrapper").isotope({
+    // options
+    itemSelector: ".freebie-item",
+    // layoutMode: "masonry",
+    // masonry: {
+    //   gutter: 0,
+    // },
+  });
+  // filter items on button click
+  $(".freebie-item-filter").on("click", "button", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+    $(".freebie-item-filter button").removeClass("is-active");
+    $(this).addClass("is-active");
   });
 });
 

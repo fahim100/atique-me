@@ -3,11 +3,17 @@
     &-section {
       padding: 150px 0;
       overflow: hidden;
+      @include desktop{
+        padding: 70px 0;
+      }
     }
     &-title {
       h2 {
         font-size: 40px;
         line-height: 50px;
+        @include desktop{
+          text-align: center;
+        }
       }
     }
   }

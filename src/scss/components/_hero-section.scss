@@ -1,5 +1,8 @@
 .hero {
   padding: 80px 0 0;
+  @include desktop{
+    padding: 150px 0 0;
+  }
   &-content {
     z-index: 1;
     position: relative;
@@ -14,10 +17,16 @@
       line-height: 30px;
       margin-bottom: 60px;
       width: 80%;
+      @include desktop{
+        width: 100%;
+      }
     }
   }
   &-thumbnail {
     margin: 0 -80px;
+    @include desktop {
+      margin: 50px 0 0 0;
+    }
     svg {
       width: 100%;
       height: auto;

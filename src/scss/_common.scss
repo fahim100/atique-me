@@ -12,6 +12,9 @@ main {
   position: relative;
   z-index: 2;
   background-color: $white;
+  @include desktop{
+    margin-bottom: 0;
+  }
 }
 
 .section {
@@ -62,6 +65,9 @@ main {
   position: relative;
   z-index: 100000;
   transition: opacity 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  @include desktop{
+    display: none;
+  }
   .pointer {
     position: fixed;
     z-index: 1000000;

@@ -5,6 +5,15 @@
   width: 100%;
   z-index: 1;
   bottom: 0;
+  @include desktop {
+    position: relative;
+    padding: 50px 0;
+  }
+  .mobile-order{
+    @include desktop {
+      order: 2;
+    }
+  }
   &-icon {
     ul {
       margin: 0;
@@ -12,6 +21,7 @@
       @include desktop {
         text-align: center;
         margin-bottom: 30px;
+        margin-top: 20px;
       }
       li {
         list-style: none;
@@ -23,12 +33,20 @@
           position: relative;
           border-radius: 50%;
           transition: $transition;
+          @include tablet {
+            height: 50px;
+            width: 50px;
+          }
           svg {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+            @include tablet{
+              width: 16px;
+              height: 21px;
+            }
           }
           &::after {
             content: "";
@@ -60,6 +78,9 @@
         }
         &:not(:last-child) {
           margin-right: 25px;
+          @include tablet {
+            margin-right: 10px;
+          }
         }
       }
     }
@@ -70,5 +91,8 @@
       width: 100%;
     }
     transform: translateY(80px);
+    @include desktop{
+      transform: translateY(0);
+    }
   }
 }

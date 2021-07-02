@@ -172,6 +172,23 @@ $(document).ready(function () {
     $(".freebie-item-filter button").removeClass("is-active");
     $(this).addClass("is-active");
   });
+
+  // Isotope Js
+  $grid_2 = $(".journal-item-wrapper").isotope({
+    // options
+    itemSelector: ".journal-item",
+    // layoutMode: "masonry",
+    // masonry: {
+    //   gutter: 0,
+    // },
+  });
+  // filter items on button click
+  $(".journal-item-filter").on("click", "button", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid_2.isotope({ filter: filterValue });
+    $(".journal-item-filter button").removeClass("is-active");
+    $(this).addClass("is-active");
+  });
 });
 
 $(window).on("scroll", function () {
